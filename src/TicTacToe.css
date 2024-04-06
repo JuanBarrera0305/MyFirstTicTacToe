@@ -1,0 +1,148 @@
+.game {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px); 
+    grid-template-rows: repeat(3, 100px); 
+    gap: 100px; 
+    border: 10px solid #333; 
+    padding: 50px; 
+}
+
+.game-status {
+    background: #194b7e;
+    border: 0px solid #000000;
+    font-size: 30px;
+    font-weight: bolder;
+    color:rgb(217, 222, 218);
+    line-height: 50px;
+    height: 50px;
+    width: 250px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+}
+
+.game-reset {
+    background: #194b7e;
+    border: 0px solid #000000;
+    font-size: 30px;
+    font-weight: bolder;
+    color:rgb(217, 222, 218);
+    line-height: 50px;
+    height: 50px;
+    width: 250px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    bottom:10px;
+    float: right;
+}
+
+.board-row:after {
+    clear: both;
+    content: '';
+    display: table;
+}
+.square {
+    background: #349fde;
+    background-position: center;
+    border: 1px solid #000000;
+    float: left;
+    position:relative;
+    z-index: 1;
+    font-size: 100px;
+    font-weight: bolder;
+    color:rgb(217, 222, 218);
+    line-height: 50px;
+    height: 200px;
+    width: 200px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+}
+
+.sqaure:hover {
+    background:#457309;
+}
+
+.winnerBoard {
+    background: #ffffff00;
+    float:center;
+    position:absolute;
+    z-index: 2;
+    font-size: 250px;
+    font-weight: bolder;
+    color:rgb(0, 0, 0);
+    line-height: 250px;
+    height: 600px;
+    width: 600px;
+    margin-right: 0px;
+    margin-top: 0px;
+    padding: 0;
+    text-align: center;
+    display:none;
+}
+
+.game-info {
+    margin-left: 20px;
+}
+
+.game-info button {
+    margin-top: 20px;
+}
+
+.counters {
+    background: #689f20;
+    border: 0px solid #000000;
+    float:none;
+    font-size: 15px;
+    font-weight: normal;
+    height: 30px;
+    width: 90px;
+    text-align: center;
+    color: #000000;
+    margin-left: 100px;
+}
+
+.text {
+    float:none;
+    font-size: 15px;
+    font-weight:bold;
+    height: 30px;
+    width: 90px;
+    text-align: center;
+    color: #000000;
+    margin-left: 100px;
+}
+
+.title {
+    font-size: 50px;
+    font-weight:bold;
+    height: 50px;
+    text-align: center;
+    color: #000000;
+    position:absolute;
+    top:-10px;
+}
+
+.board-row {
+    margin-left: -50px;
+    margin-top: -48px;
+        
+}
+
+.title {
+    top: -425px; 
+    left:440px;
+    position: relative;
+}
