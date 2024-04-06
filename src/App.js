@@ -10,7 +10,7 @@ const TicTacToe = () => {
     if (winner || board[index]) return;
 
     const newBoard = [...board];
-    newBoard[index] = xIsNext ? 'X' : 'O';
+    newBoard[index] = xIsNext ? 'X' : '';
     setBoard(newBoard);
 
     if(calculateWinner(newBoard)) {
@@ -69,7 +69,7 @@ const getWinner = () => {
     } else if (board.every((square) => square !== null)) {
       return 'Draw 😳';
     } else {
-      return `Next player: ${xIsNext ? 'A' : 'P'}`;
+      return `Next player: ${xIsNext ? 'X' : 'O'}`;
     }
   };
 
